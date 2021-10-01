@@ -1,0 +1,42 @@
+:root {
+  --first: red;
+  --second: orange;
+  --third: purple;
+  --fourth: pink;
+
+  --primary: black;
+  --secondary: white;
+}
+
+.person {
+  padding: 0.5px 2em 0.5em;
+  border-style: solid;
+  border-width: 0.1em;
+}
+
+.person span {
+  font-weight: bold;
+}
+
+.first-generation {
+  background-color: var(--first);
+  border-color: var(--first);
+  color: var(--primary);
+}
+
+.second-generation {
+  background-color: var(--second);
+  border-color: var(--second);
+}
+
+.third-generation {
+  background-color: var(--third);
+  border-color: var(--third);
+  color: var(--secondary);
+}
+
+.fourth-generation {
+  background-color: var(--fourth);
+  border-color: var(--fourth);
+  color: var(--primary);
+}
