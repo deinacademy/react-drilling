@@ -9,7 +9,7 @@ Presentacion: [slides.com/equimancho/react-property-drilling](https://slides.com
 
 ## Pasos
 
-1. Padre
+1. [Padre](tree/1)
 2. Hijo
 3. Nieto
 4. Heredar Apellido
