@@ -1,15 +1,15 @@
 import React from "react";
 import GrandChild from "./GrandChild";
 
-const Child = ({ ux, nameChild, nameGrandChild, lastName }) => {
+const Child = ({ styles, nameChild, nameGrandChild, lastName }) => {
   return (
-    <div className={`${ux.person} ${ux.second}`}>
+    <div className={`${styles.person} ${styles.second}`}>
       {nameChild}
       {!!lastName && (
           <span> {lastName}</span>
       )}
       
-      <GrandChild ux={ux} name={nameGrandChild} lastName={lastName} />
+      <GrandChild styles={styles} name={nameGrandChild} lastName={lastName} />
     </div>
   );
 };

@@ -1,21 +1,16 @@
-# React Property Drilling
+# React
 
-Evitar el property drilling (pasar propiedades excesivamente entre componentes) usado `React.Children`.
+## Property Drilling
 
-## Ventajas
+Es una problemática que ocurre al pasar propiedades a otro componente con la ayuda de otros componentes que están entre ellos.
+Este proyecto muestra la problematica y como tratar de evitarlo usado `React.Children`.
 
-* [SOLID](https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898)
-* Menos cantidad de propiedades sobre todo en componentes de nivel superior
-* Separacion de conceptos, el papa no tiene que conocer cosas de su hijo si no las va a usar
-* Facilidad de depuracion
-* Facilidad de depuracion sin navegar entre proyectos buscando el componente hijo
-* Disminucion del tamaño de paquetes (porque el hijo no esta en el padre)
-* Disminución del mantenimiento de webpack y peerDependencies (porque el hijo no esta en el padre)
-* Padre no necesita ser re-compilado por correccion de hijo
-* Se pueden comentar papa o hijo para hacer debug
-* Re-usabilidad del componente
+Presentacion: https://slides.com/equimancho/react-property-drilling
 
-## Desventajas
+## Pasos
 
-* Compartir Propiedades entre padre a hijo requiere codigo extra con React.Children.map
-* Mayor cantidad de imports
+1. Padres
+2. Hijos
+3. Nietos
+4. Apellido
+5. BisNietos

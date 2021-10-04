@@ -1,8 +1,8 @@
 import React from "react";
 
-const GrandChild = ({ ux, name, lastName }) => {
+const GrandChild = ({ styles, name, lastName }) => {
   return (
-    <div className={`${ux.person} ${ux.third}`}>
+    <div className={`${styles.person} ${styles.third}`}>
       {name}
       {!!lastName && (
           <span> {lastName}</span>

@@ -8,7 +8,7 @@ import Son from "./components/avoid/Son";
 import './App.css'
 
 function App() {
-  const ux = {
+  const styles = {
     person: "person",
     first: "first-generation",
     second: "second-generation",
@@ -24,7 +24,7 @@ function App() {
           <h1>Property Drilling</h1>
 
           <Parent
-            ux={ux}
+            styles={styles}
             nameParent="Mauricio"
             nameChild="Camilo"
             nameGrandChild="Jose"
@@ -33,22 +33,22 @@ function App() {
         </div>
         <div className="compare-side">
         <h1>Avoid Drilling</h1>
-          {/* <Father ux="person root-generation" name="Rafael" lastName="Martinez"> */}
-            <Father ux="person first-generation" name="Mauricio" lastName="Martinez">
-              <Son ux="person second-generation" name="Camilo">
-                <Son ux={`${ux.person} ${ux.third}`} name="Jose">
-                  {/* <Son ux={`${ux.person} ${ux.fourth}`} name="Sandra">
+          <Father className="person root-generation" name="Rafael" lastName="Martinez">
+            <Father className="person first-generation" name="Mauricio" lastName="Martinez">
+              <Son className="person second-generation" name="Camilo">
+                <Son className="person third-generation" name="Jose">
+                  <Son className="person fourth-generation" name="Sandra">
                     <div>I don't want 👶</div>
-                  </Son> */}
-                  {/* <Son ux="person second-generation" name="Camilo"/> */}
+                  </Son>
+                  <Son className="person second-generation" name="Camilo"/>
                 </Son>
-                {/* <Son ux={`${ux.person} ${ux.third}`} name="Alejandro" />
-                <Son ux={`${ux.person} ${ux.third}`} name="Lucia" />
-                <Son ux={`${ux.person} ${ux.third}`} name="Julian" /> */}
-                </Son>
-                {/* <Son ux="person second-generation" name="Alejandra"/> */}
+                <Son className="person third-generation" name="Alejandro" />
+                <Son className="person third-generation" name="Lucia" />
+                <Son className="person third-generation" name="Julian" />
+              </Son>
+              <Son className="person second-generation" name="Alejandra"/>
             </Father>
-          {/* </Father> */}
+          </Father>
         </div>
       </div>
     </div>

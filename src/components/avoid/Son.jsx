@@ -1,8 +1,8 @@
 import React, { Children } from "react";
 
-const Son = ({ ux, name, lastName, children, setNumber }) => {
+const Son = ({ className, name, lastName, children, setNumber }) => {
   return (
-    <div className={ux}>
+    <div className={className}>
       <div>
         {name}{" "}
         {!!lastName && (

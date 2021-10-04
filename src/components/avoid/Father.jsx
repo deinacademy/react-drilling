@@ -1,10 +1,10 @@
 import React, { useState, Children} from "react";
 
-const Father = ({ ux, name, lastName, children}) => {
+const Father = ({ className, name, lastName, children}) => {
   const [number, setNumber] = useState(0)
 
   return (
-      <div className={ux}>
+      <div className={className}>
         {name}
         {!!lastName && (
           <span> {lastName}</span>
