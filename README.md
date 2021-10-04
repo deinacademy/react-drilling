@@ -14,5 +14,5 @@ Presentacion: [slides.com/equimancho/react-property-drilling](https://slides.com
 3. Nieto
 4. Heredar Apellido
 5. Hermanos
-6. Conexion entre componentes
-7. Gran Familia
+6. Gran Familia
+7. Conexion entre componentes
