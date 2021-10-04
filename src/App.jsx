@@ -27,27 +27,14 @@ function App() {
             styles={styles}
             nameParent="Mauricio"
             nameChild="Camilo"
-            nameGrandChild="Jose"
             lastName="Martinez"
           />
         </div>
         <div className="compare-side">
-        <h1>Avoid Drilling</h1>
-          <Father className="person root-generation" name="Rafael" lastName="Martinez">
-            <Father className="person first-generation" name="Mauricio" lastName="Martinez">
-              <Son className="person second-generation" name="Camilo">
-                <Son className="person third-generation" name="Jose">
-                  <Son className="person fourth-generation" name="Sandra">
-                    <div>I don't want 👶</div>
-                  </Son>
-                  <Son className="person second-generation" name="Camilo"/>
-                </Son>
-                <Son className="person third-generation" name="Alejandro" />
-                <Son className="person third-generation" name="Lucia" />
-                <Son className="person third-generation" name="Julian" />
-              </Son>
-              <Son className="person second-generation" name="Alejandra"/>
-            </Father>
+          <h1>Avoid Drilling</h1>
+          
+          <Father className="person first-generation" name="Mauricio" lastName="Martinez">
+            <Son className="person second-generation" name="Camilo" lastName="Martinez" />
           </Father>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import Child from "./Child";
 
-const Parent = ({ styles, nameParent, nameChild, nameGrandChild, lastName }) => {
+const Parent = ({ styles, nameParent, nameChild, lastName }) => {
   return (
     <div className={`${styles.person} ${styles.first}`}>
       {nameParent}
@@ -13,7 +13,6 @@ const Parent = ({ styles, nameParent, nameChild, nameGrandChild, lastName }) => 
         className={styles.second}
         styles={styles}
         nameChild={nameChild}
-        nameGrandChild={nameGrandChild}
         lastName={lastName}
       />
     </div>
