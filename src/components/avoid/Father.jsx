@@ -23,7 +23,7 @@ const Father = ({ ux, name, lastName, children}) => {
               <>
                 : <span> {number} </span>
                 <child.type {...child.props} {...inheritance} setNumber={setNumber} />
-              </>  
+              </>
             );
           } else {
             return <child.type {...child.props} {...inheritance} />;

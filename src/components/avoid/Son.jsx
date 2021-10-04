@@ -14,7 +14,13 @@ const Son = ({ ux, name, lastName, children, setNumber }) => {
       </div>
 
       {Children.map(children, (child, i) => {
-        return <child.type {...child.props} key={i} lastName={lastName}/>;
+        const inheritance = {
+          key: i
+        }
+        if (!!lastName && !("lastName" in child.props)) {
+          inheritance.lastName = lastName
+        }
+        return <child.type {...child.props} {...inheritance}/>;
       })}
     </div>
   );
