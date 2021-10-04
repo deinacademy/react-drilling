@@ -13,7 +13,7 @@ const Son = ({ className, name, lastName, children, setNumber }) => {
         const inheritance = {
           key: i
         }
-        if (!!lastName && !("lastName" in child.props)) {
+        if (!!lastName && !("lastName" in child.props) && (typeof child.type !== 'string')) {
           inheritance.lastName = lastName
         }
         return <child.type {...child.props} {...inheritance}/>;
