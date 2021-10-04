@@ -4,11 +4,9 @@ const Son = ({ className, name, lastName, children, setNumber }) => {
   return (
     <div className={className}>
       <div>
-        {name}{" "}
+        {name}
         {!!lastName && (
-          <>
           <span> {lastName} </span>
-          </>
         )}
         { !!setNumber && <button onClick={() =>setNumber(number => number +1) }>Add</button>}
       </div>
