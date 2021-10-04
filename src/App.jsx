@@ -37,7 +37,7 @@ function App() {
           <Father className="person root-generation" name="Rafael" lastName="Martinez">
             <Father className="person first-generation" name="Mauricio" lastName="Martinez">
               <Son className="person second-generation" name="Camilo">
-                <Son className="person third-generation" name="Jose">
+                <Son className="person third-generation" name="Jose" lastName="Arango">
                   <Son className="person fourth-generation" name="Sandra">
                     <div>I don't want 👶</div>
                   </Son>
