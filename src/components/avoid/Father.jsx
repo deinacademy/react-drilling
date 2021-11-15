@@ -10,9 +10,9 @@ const Father = ({ className, name, lastName, children}) => {
         <span> {lastName}</span>
       )}
 
-      {Children.map(children, (child, i) => {
+      {Children.map(children, (child) => {
         const inheritance = {
-          key: i
+          key: crypto.randomUUID()
         }
         if (!!lastName && !("lastName" in child.props) && (typeof child.type !== 'string')) {
           inheritance.lastName = lastName
