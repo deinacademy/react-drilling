@@ -9,9 +9,9 @@ const Son = ({ className, name, lastName, children, setNumber }) => {
       )}
       { !!setNumber && <button onClick={() =>setNumber(number => number +1) }>Add</button>}
     
-      {Children.map(children, (child, i) => {
+      {Children.map(children, (child) => {
         const inheritance = {
-          key: i
+          key: crypto.randomUUID()
         }
         if (!!lastName && !("lastName" in child.props) && (typeof child.type !== 'string') ) {
           inheritance.lastName = lastName
