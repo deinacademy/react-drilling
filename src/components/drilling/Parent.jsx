@@ -10,7 +10,6 @@ const Parent = ({ styles, nameParent, nameChild, lastName }) => {
       )}
 
       <Child
-        className={styles.second}
         styles={styles}
         nameChild={nameChild}
         lastName={lastName}
