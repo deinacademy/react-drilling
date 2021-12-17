@@ -19,15 +19,15 @@ const Father = ({ className, name, lastName, children}) => {
         }
 
         if (child.props.name === "Camilo") {
-          return (
-            <>
-              : <span> {number} </span>
-              <child.type {...child.props} {...inheritance} setNumber={setNumber} />
-            </>
-          );
-        } else {
-          return <child.type {...child.props} {...inheritance} />;
+          inheritance.setNumber = setNumber
         }
+
+        return (
+          <>
+            {!!inheritance.setNumber && <>:<span> {number} </span></>}
+            <child.type {...child.props} {...inheritance}/>
+          </>
+        );
       })}
     </div>
   );
